@@ -1,0 +1,84 @@
+html,
+body {
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	background: #1D1F20;
+}
+
+.csb-material-color-picker {
+	position: relative;
+	height: 200px;
+	width: 200px;
+	background: #fff;
+}
+	.csb-material-color-picker .csb-material-color-picker-sources {
+		padding: 5px;
+	}
+		.csb-material-color-picker .csb-material-color-picker-sources a {
+			display: inline-block;
+			background-color: #fee50e;
+			color: #5f3a71;
+			text-align: center;
+			padding: 6px 7px;
+			font-size: 11px;
+			text-transform: uppercase;
+			text-decoration: none;
+			font-weight: bold;
+			border-radius: 2px;
+		}
+			.csb-material-color-picker .csb-material-color-picker-sources a:hover,
+			.csb-material-color-picker a.csb-material-color-is_on {
+				background-color: #5f3a71;
+				color: #fee50e;
+			}
+	.csb-material-color-picker .csb-material-color-picker-picker-colors {		
+	}
+	.csb-material-color-picker .csb-material-btn {
+		position: relative;
+		display: inline-block;
+		margin: 3px;
+		height: 56px;
+		width: 56px;
+		opacity: 0;
+		transform: scale(0.5);
+		transition: all 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+	}
+	.csb-material-color-picker .csb-material-btn:hover {
+		transform: scale(1.2);
+	}
+	.csb-material-color-picker .csb-material-btn:active {
+		transform: scale(1.1);
+	}
+
+.csb-material-color-picker .csb-material-animate {
+	transform: scale(1);
+	opacity: 1;
+}
+
+.csb-material-back-btn:before{
+	content: url('data:image/svg+xml;utf8,<svg fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>');
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.close:before{
+	content: url('data:image/svg+xml;utf8,<svg fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" /></svg>');
+	position: absolute;
+	left: 16px;
+	top: 16px;
+}
+
+.test-color-picker,
+.test-color-picker2 {
+	margin: 5% auto;
+}
+.test-color-picker {
+	height: 260px;
+	width: 340px;
+}
+.test-color-picker2 {
+	width: 550px;
+}
