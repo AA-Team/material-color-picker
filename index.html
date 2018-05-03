@@ -1,0 +1,30 @@
+<link rel='stylesheet' id='jquery-ui-css'  href='style.css' type='text/css' media='all' />
+
+<div class="test-color-picker"></div>
+
+<div class="test-color-picker2"></div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="color-picker.js"></script>
+<script>
+	$(".test-color-picker").materialColorPicker({
+		container_size: {
+            'width': '340px',
+            'height': '260px'
+        },
+        onChange: function( color ){
+			console.log( color);
+        }
+	});
+
+	$(".test-color-picker2").materialColorPicker({
+		container_size: {
+            'width': '550px',
+            'height': '120px'
+        },
+        color_size: {
+            'width': '30px',
+            'height': '30px'
+        }
+	});
+</script>
